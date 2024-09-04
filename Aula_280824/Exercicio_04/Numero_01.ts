@@ -44,7 +44,7 @@ function main() {
             novoArray = criarArrayDeNumeros(tamanhoArray);
         } else if (tipoArray === "palavra") {
             novoArray = criarArrayDePalavras(tamanhoArray);
-            comparador = (a: string, b: string) => (a.length > b.length ? a : b);
+            comparador = (a: string, b: string) => (a > b ? a : b); // Comparação pela ordem alfabética
         }
 
         arraysCriados.push({ array: novoArray, comparador });
@@ -52,7 +52,7 @@ function main() {
 
     arraysCriados.forEach((obj, index) => {
         const maiorElemento = encontrarMaiorElemento(obj.array, obj.comparador);
-        console.log(`O maior elemento do array numero ${index + 1} é:`, maiorElemento);
+        console.log(`O maior elemento do array numero ${index + 1} eh:`, maiorElemento);
     });
 }
 

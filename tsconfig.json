@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es6", // Target ECMAScript version
+        "module": "commonjs", // Module system
+        "experimentalDecorators": true, // Habilita o uso de decoradores
+        "emitDecoratorMetadata": true, // Emite metadados necessários para alguns decoradores
+        "strict": true // Habilita verificações de tipos mais estritas
+    }
+}
